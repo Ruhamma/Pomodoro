@@ -24,7 +24,7 @@ function TimerPage() {
   });
   const [tempBackgroundSettings, setTempBackgroundSettings] = useState({
     backgroundColor: "",
-    backgroundImage: "",
+    backgroundImage: "/images/image2.jpg",
   });
   const [soundSettings, setSoundSettings] = useState({
     sound: "",
@@ -44,15 +44,25 @@ function TimerPage() {
   const [settingChoice, setSettingChoice] = useState("general");
   const [openPopUp, setOpenPopUp] = useState(false);
   const [openInfo, setOpenInfo] = useState(false);
-  
- if (!localStorage.getItem("generalSetting")) {
-   const settingsData = {
-     studyMinute: 25,
-     breakMinute: 5,
-     longBreakMinute: 15,
-   };
-   localStorage.setItem("generalSetting", JSON.stringify(settingsData));
- }
+
+  if (!localStorage.getItem("generalSetting")) {
+    const settingsData = {
+      studyMinute: 25,
+      breakMinute: 5,
+      longBreakMinute: 15,
+    };
+    localStorage.setItem("generalSetting", JSON.stringify(settingsData));
+  }
+  if (!localStorage.getItem("backgroundSettings")) {
+    const backgroundSettings = {
+      backgroundColor: "",
+      backgroundImage: "/images/image2.jpg",
+    };
+    localStorage.setItem(
+      "backgroundSettings",
+      JSON.stringify(backgroundSettings)
+    );
+  }
   const handleSessionType = (type) => {
     setSessionType(type);
   };
@@ -155,8 +165,8 @@ function TimerPage() {
       longBreakMinute: 15,
     };
     const backgroundSettings = {
-      backgroundColor: "#000000",
-      backgroundImage: "",
+      backgroundColor: "",
+      backgroundImage: "/images/image2.jpg",
     };
     const soundSettings = {
       sound: "/audios/lofi.wav",
@@ -645,7 +655,7 @@ function TimerPage() {
               )}
             </div>
           </div>
-         
+
           <div className="flex-col justify-evenly overflow-x-hidden ">
             <div
               className="flex w-full justify-evenly text-lg sm:text-xl my-10 choice "
