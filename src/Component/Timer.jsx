@@ -201,7 +201,7 @@ function Timer({ studyMinute, breakMinute, longBreakMinute, sessionType }) {
             <div className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] text-4xl sm:text-5xl rounded-full bg-white bg-opacity-[0.35] shadow-lg backdrop-filter backdrop-blur-lg backdrop-saturate-150 border-2 border-white border-opacity-20 text-black flex justify-center items-center mx-auto m-10">
               {formatTime(focusTimer)}
             </div>
-            <div className="flex justify-evenly w-[25%] mx-auto gap-10  mt-[45px] pb-4">
+            <div className="flex justify-evenly w-fit mx-auto gap-10  mt-[45px] pb-4">
               <button
                 className="cursor-pointer"
                 onClick={() => {
@@ -236,7 +236,7 @@ function Timer({ studyMinute, breakMinute, longBreakMinute, sessionType }) {
             <div className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] text-4xl sm:text-5xl rounded-full bg-blue-200 bg-opacity-[0.35] shadow-lg backdrop-filter backdrop-blur-lg backdrop-saturate-150 border-2 border-white border-opacity-20 text-black flex justify-center items-center mx-auto m-10">
               {formatTime(breatherTimer)}
             </div>
-            <div className="flex justify-evenly w-[25%] mx-auto  gap-10 mt-[45px]">
+            <div className="flex justify-evenly w-fit mx-auto  gap-10 mt-[45px]">
               <button
                 className="cursor-pointer text-blue-300"
                 onClick={() => {
@@ -271,7 +271,7 @@ function Timer({ studyMinute, breakMinute, longBreakMinute, sessionType }) {
             <div className="sm:w-[450px] sm:h-[450px] w-[300px] h-[300px] text-4xl sm:text-5xl rounded-full bg-purple-200 bg-opacity-[0.35] shadow-lg backdrop-filter backdrop-blur-lg backdrop-saturate-150 border-2 border-white border-opacity-20 text-black flex justify-center items-center mx-auto m-10">
               {formatTime(longBreakTimer)}
             </div>
-            <div className="flex justify-evenly w-[25%] mx-auto  gap-10 mt-[45px]">
+            <div className="flex justify-evenly w-fit mx-auto  gap-10 mt-[45px]">
               <button
                 className="cursor-pointer text-purple-300"
                 onClick={() => {

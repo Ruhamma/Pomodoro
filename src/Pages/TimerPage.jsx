@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Timer from "../Component/Timer";
-import { FaMusic } from "react-icons/fa";
 import {
   AiFillQuestionCircle,
   AiOutlineFullscreen,
