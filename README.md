@@ -10,7 +10,7 @@ Super simple Pomodoro Timer web app to help you get stuff done!
 
 ## How to Use
 
-Just head over to [GitHub Pages](https://your-username.github.io/pomodoro-website/) and start using the Pomodoro timer right away!
+Just head over to [Pomodoro](https://pomodoro-psi-ivory.vercel.app/) and start using the Pomodoro timer right away!
 
 ## Screenshots
 
